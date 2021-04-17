@@ -31,8 +31,7 @@ class BooksController < ApplicationController
        flash[:notice] = "successfully"
        redirect_to book_path
     else
-      flash.now[:alert] = "error"
-       render 'index'
+       render 'edit'
     end
   end
 
